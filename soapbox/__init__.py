@@ -19,7 +19,7 @@ def send_simple_message(subject, body):
 
 @app.route("/")
 def hello():
-  return "Hi, this is the plusonenews publisher."
+  return "Hi, this is the plusonenews publisher, and it's called SOAPBOX."
 
 @app.route('/publish', methods=['POST'])
 def publish():
@@ -29,6 +29,3 @@ def publish():
     resp = send_simple_message(subject=subject, body=body)
     return "{} OK".format(resp.status_code)
 
-if __name__ == "__main__":
-    app.debug = True
-    app.run()
