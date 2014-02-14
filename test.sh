@@ -1,0 +1,1 @@
+curl -X POST http://localhost:5000/publish -d 'subject=Just a few more keystrokes...' -d 'body=Building some last minute supporting tools (like this one: the publisher). Is python-requests better than Spray client? YES.'
